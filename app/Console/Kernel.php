@@ -25,7 +25,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('parse:run')->hourly();
+        $schedule->command('parse:run')->everyMinute();
     }
 
     /**
